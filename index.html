@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +10,39 @@
     <script src="script.js"></script>
 </head>
 <body>
-    Calculator
+    <div id="Calculator-Container">
+    <div id="name">    Calculator </div>
+    <input type="text" id="display" value="0" disabled >
+    <div>
+    <button id="numButton" onclick="buttonPressed('7')">7</button>
+    <button id="numButton" onclick="buttonPressed('8')">8</button>
+    <button id="numButton" onclick="buttonPressed('9')">9</button>
+    <button id="opButton" onclick="('/')" >÷</button>
+  </div>
+  <div>
+    <button id="numButton" onclick="buttonPressed('4')">4</button>
+    <button id="numButton" onclick="buttonPressed('5')">5</button>
+    <button id="numButton" onclick="buttonPressed('6')">6</button>
+    <button id="opButton" onclick="calculate('*')" >*</button>
+  </div>
+  <div>
+    <button id="numButton" onclick="buttonPressed('1')">1</button>
+    <button id="numButton" onclick="buttonPressed('2')">2</button>
+    <button id="numButton" onclick="buttonPressed('3')">3</button>
+    <button id="opButton" onclick="calculate('-')" >-</button>
+  </div>
+  <div>
+    <button id="numButton" onclick="buttonPressed('0')">0</button>
+    <button id="numButton" onclick="buttonPressed('.')">.</button>
+    <button id="opButton" onclick="calculate('=')" >=</button>
+    <button id="opButton" onclick="calculate('+')" >+</button>
+    
+  </div>
+  <div id="endLine">
+    <button onclick="clearDisplay()">Clear</button>
+    <button onclick="deleteNum()">Delete</button>
+  </div>
+  </div>
 </body>
 </html>
+
